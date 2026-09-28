@@ -122,8 +122,9 @@
 
   /* HERO */
   .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:150px 0 90px;background:var(--navy);overflow:hidden}
-  .hero-bg{position:absolute;inset:-8% 0;background:url("https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&q=80&fit=crop") center/cover;opacity:.32;filter:grayscale(.35) contrast(1.12);will-change:transform}
-  .hero-veil{position:absolute;inset:0;background:radial-gradient(1100px 620px at 78% 8%,rgba(221,185,120,.16),transparent 60%),linear-gradient(105deg,var(--navy) 8%,rgba(11,22,38,.86) 46%,rgba(11,22,38,.6) 100%)}
+  .hero-bg{position:absolute;inset:-8% 0;background:url("https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&q=80&fit=crop") center/cover;opacity:.48;filter:grayscale(.2) contrast(1.08);will-change:transform}
+  .hero-veil{position:absolute;inset:0;background:radial-gradient(1100px 620px at 78% 8%,rgba(221,185,120,.2),transparent 60%),linear-gradient(105deg,rgba(11,22,38,.92) 8%,rgba(11,22,38,.66) 46%,rgba(11,22,38,.34) 100%)}
+  .hero-wm{position:absolute;right:2%;top:6vh;z-index:0;pointer-events:none;user-select:none;font-family:var(--serif);font-weight:700;font-size:clamp(9rem,17vw,17rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(221,185,120,.16);letter-spacing:.02em}
   .hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
   .hero h1{font-family:var(--serif);font-weight:700;color:#fff;font-size:clamp(3rem,7vw,5.6rem);line-height:.98;letter-spacing:-2px;margin:24px 0 0;max-width:14ch}
   .hero h1 em{font-style:italic;color:var(--gold-lt)}
@@ -185,6 +186,7 @@
 
   /* WHY */
   .why{background:var(--navy);color:#fff;overflow:hidden}
+  .why::after{content:"GS";position:absolute;right:2%;bottom:2rem;z-index:0;pointer-events:none;user-select:none;font-family:var(--serif);font-weight:700;font-size:clamp(7rem,13vw,12rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(221,185,120,.08);letter-spacing:.02em}
   .why::before{content:"";position:absolute;inset:0;background:radial-gradient(820px 420px at 92% -10%,rgba(221,185,120,.16),transparent 60%)}
   .why .wrap{position:relative}
   .why .head{max-width:640px;margin-bottom:56px}
@@ -327,6 +329,7 @@
   .socials a:hover{background:var(--gold);border-color:var(--gold);color:#fff;transform:translateY(-4px)}
   .socials svg{width:19px;height:19px;fill:currentColor}
   .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding:26px 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:.86rem;align-items:center}
+  .foot-wm{position:relative;display:block;font-family:var(--serif);font-weight:700;font-size:clamp(4rem,12vw,13rem);line-height:.72;letter-spacing:.02em;text-align:center;white-space:nowrap;pointer-events:none;user-select:none;color:transparent;-webkit-text-stroke:1px rgba(221,185,120,.22);transform:translateY(19%);margin-top:1rem}
   .built a{color:var(--gold-lt);font-weight:700}.built a:hover{text-decoration:underline}
     .legal-links{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
     .legal-links a{color:#c7d2e2;text-decoration:none}
@@ -415,6 +418,7 @@
 <section class="hero" id="home">
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-veil"></div>
+  <div class="hero-wm" aria-hidden="true">GS</div>
   <div class="wrap">
     <div class="hero-copy">
       <span class="eyebrow on-dark">CA • CS • Legal Services</span>
@@ -642,6 +646,7 @@
       <span class="legal-links"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="disclaimer.html">Disclaimer</a></span>
       <span class="built">Built with <span class="heart">♥</span> by <a href="https://Swaniki.com" target="_blank" rel="noopener">Swaniki</a></span>
     </div>
+    <div class="foot-wm" aria-hidden="true">GS CONSULTANTS</div>
   </div>
 </footer>
 
