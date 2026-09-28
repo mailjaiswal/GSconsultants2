@@ -88,6 +88,8 @@
   .brand .bt strong{font-family:var(--serif);font-weight:700;color:#fff;font-size:1.2rem;letter-spacing:.5px;display:block;line-height:1;transition:color .5s}
   .brand .bt span{font-size:.58rem;letter-spacing:.26em;color:var(--gold-lt);font-weight:700}
   .navbar.scrolled .brand .bt strong{color:var(--navy)}
+  .brand .mono .mono-g{transition:fill .5s var(--ease)}
+  .navbar.scrolled .brand .mono .mono-g{fill:var(--navy)}
   nav.menu{display:flex;gap:4px;margin-left:auto}
   nav.menu a{font-weight:600;font-size:.92rem;color:rgba(255,255,255,.9);padding:10px 16px;border-radius:100px;transition:.4s var(--ease)}
   .navbar.scrolled nav.menu a{color:var(--navy)}
@@ -398,7 +400,7 @@
     <a href="#home" class="brand">
       <svg class="mono" viewBox="0 0 100 100" aria-hidden="true">
         <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DDB978"/><stop offset="1" stop-color="#926A2C"/></linearGradient></defs>
-        <text x="28" y="70" font-family="Playfair Display,serif" font-size="60" font-weight="700" fill="#fff">G</text>
+        <text class="mono-g" x="28" y="70" font-family="Playfair Display,serif" font-size="60" font-weight="700" fill="#fff">G</text>
         <text x="50" y="70" font-family="Playfair Display,serif" font-size="60" font-weight="700" fill="url(#lg)">S</text>
       </svg>
       <span class="bt"><strong>GS CONSULTANTS</strong><span>ADVICE THAT MATTERS</span></span>
